@@ -1,0 +1,23 @@
+{
+    "kb_name": "CI/CD Templates with Amazon Bedrock",
+    "description": "A knowledge base providing CI/CD templates for different version control systems using Amazon Bedrock.",
+    "modules": [
+      {
+        "name": "azurejavadockerecs",
+        "description": "CI/CD template for Java application using Azure as VCS, Docker for containerization, and ECS for deployment.",
+        "source_module": "githubjavadockerecs",
+        "cicd": {
+          "jenkins": "https://github.com/ramakrishna20/bedrock-cicd/blob/main/azurerepos-java-docker-ecs-groovy/azurereposjavadockerecs.groovy"
+          
+        }
+      },
+      {
+        "name": "gitlabjavadockerecs",
+        "description": "CI/CD template for Java application using GitLab as VCS, Docker for containerization, and ECS for deployment.",
+        "source_module": "gitlabjavadockerecs",
+        "cicd": {
+          "jenkins": "https://github.com/ramakrishna20/bedrock-cicd/blob/main/gitlab-java-docker-ecs-groovy/gitlabjavadockerecs.groovy"
+        }
+      }
+    ]
+  }
